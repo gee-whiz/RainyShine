@@ -10,6 +10,9 @@
 		5E03E00E1E1CD76B00941F0A /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03E00D1E1CD76B00941F0A /* WeatherClient.swift */; };
 		5E03E0111E1CD82E00941F0A /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03E0101E1CD82E00941F0A /* Weather.swift */; };
 		5E03E0141E1CD8D300941F0A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03E0131E1CD8D300941F0A /* Constants.swift */; };
+		5E03E0161E1D0C2200941F0A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03E0151E1D0C2200941F0A /* Forecast.swift */; };
+		5E03E0191E1D1A1800941F0A /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03E0181E1D1A1800941F0A /* WeatherCell.swift */; };
+		5E03E01B1E1D1C4300941F0A /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E03E01A1E1D1C4300941F0A /* Helper.swift */; };
 		5E3924311E1B7959003F3D0F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3924301E1B7959003F3D0F /* AppDelegate.swift */; };
 		5E3924331E1B7959003F3D0F /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3924321E1B7959003F3D0F /* WeatherVC.swift */; };
 		5E3924361E1B7959003F3D0F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3924341E1B7959003F3D0F /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 		5E03E00D1E1CD76B00941F0A /* WeatherClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
 		5E03E0101E1CD82E00941F0A /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		5E03E0131E1CD8D300941F0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5E03E0151E1D0C2200941F0A /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		5E03E0181E1D1A1800941F0A /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		5E03E01A1E1D1C4300941F0A /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		5E39242D1E1B7959003F3D0F /* RainyShine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainyShine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3924301E1B7959003F3D0F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E3924321E1B7959003F3D0F /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				5E03E0101E1CD82E00941F0A /* Weather.swift */,
+				5E03E0151E1D0C2200941F0A /* Forecast.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -76,8 +83,17 @@
 			isa = PBXGroup;
 			children = (
 				5E03E0131E1CD8D300941F0A /* Constants.swift */,
+				5E03E01A1E1D1C4300941F0A /* Helper.swift */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		5E03E0171E1D19F100941F0A /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				5E03E0181E1D1A1800941F0A /* WeatherCell.swift */,
+			);
+			name = TableViewCells;
 			sourceTree = "<group>";
 		};
 		5E3924241E1B7959003F3D0F = {
@@ -101,6 +117,7 @@
 		5E39242F1E1B7959003F3D0F /* RainyShine */ = {
 			isa = PBXGroup;
 			children = (
+				5E03E0171E1D19F100941F0A /* TableViewCells */,
 				5E03E0121E1CD8BE00941F0A /* Utils */,
 				5E03E00F1E1CD81900941F0A /* Models */,
 				5E03E00C1E1CD74900941F0A /* Networking */,
@@ -250,7 +267,10 @@
 			files = (
 				5E3924331E1B7959003F3D0F /* WeatherVC.swift in Sources */,
 				5E03E00E1E1CD76B00941F0A /* WeatherClient.swift in Sources */,
+				5E03E0161E1D0C2200941F0A /* Forecast.swift in Sources */,
 				5E3924391E1B7959003F3D0F /* RainyShine.xcdatamodeld in Sources */,
+				5E03E0191E1D1A1800941F0A /* WeatherCell.swift in Sources */,
+				5E03E01B1E1D1C4300941F0A /* Helper.swift in Sources */,
 				5E3924311E1B7959003F3D0F /* AppDelegate.swift in Sources */,
 				5E03E0111E1CD82E00941F0A /* Weather.swift in Sources */,
 				5E03E0141E1CD8D300941F0A /* Constants.swift in Sources */,
