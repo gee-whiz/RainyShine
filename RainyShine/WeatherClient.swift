@@ -7,3 +7,40 @@
 //
 
 import Foundation
+import Alamofire
+
+
+
+typealias JSONStantard = [String: AnyObject]
+class  WeatherClient {
+
+
+	static func getCurrentWeatherDataByCity(url: String, completion:  @escaping (Weather)->Void) {
+
+		Alamofire.request(url).response(completionHandler: { (response)-> Void in
+			do{
+
+             let jsonRespondObject = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as! JSONStantard
+
+				print(jsonRespondObject)
+
+			}catch{
+				print(error)
+			}
+
+		})
+
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+}

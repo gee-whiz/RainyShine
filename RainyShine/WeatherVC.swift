@@ -19,7 +19,9 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		print(CURRENT_WEATHER_URL)
+		WeatherClient.getCurrentWeatherDataByCity(url: CURRENT_WEATHER_URL) { (Weather) in
+
+		}
 
 	}
 
