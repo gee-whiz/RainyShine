@@ -53,7 +53,6 @@ class  WeatherClient {
 		Alamofire.request(FORECAST_WEATHER_URL).response(completionHandler: { (response)-> Void in
 			do{
 				let jsonRespondObject = try JSONSerialization.jsonObject(with: response.data!, options: .mutableContainers) as! JSONStantard
-
 				if let result = jsonRespondObject["list"] as? [JSONStantard] {
 					for item  in 0..<result.count {
 						let main = result[item]
@@ -69,11 +68,9 @@ class  WeatherClient {
 							let items = main["weather"] as? [JSONStantard]
 							let item = items?[0]
 							let type = item?["main"] as! String
-                          forecast.append(Forecast(temp_max: max_temp, temp_min: min_temp, date: unixconverteddate.dayOfTheWeek(), weatherType: type))
+                            forecast.append(Forecast(temp_max: max_temp, temp_min: min_temp, date: unixconverteddate.dayOfTheWeek(), weatherType: type))
 
 						}
-
-
 					}
 				}
 			 completion(forecast)

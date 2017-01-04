@@ -22,6 +22,7 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 		WeatherClient.getWeatherforecast(lat: "-29.7371", long: "31.0736") {  (data) in
             self.forecast = data
+			self.forecast.remove(at: 0)
 			self.tableView.reloadData()
 	    }
 

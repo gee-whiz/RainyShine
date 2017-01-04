@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RainyShine/WeatherVC.swift"
-            timestampString = "505223557.180098"
+            timestampString = "505229850.428663"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
             landmarkName = "WeatherVC"
             landmarkType = "3">
          </BreakpointContent>
