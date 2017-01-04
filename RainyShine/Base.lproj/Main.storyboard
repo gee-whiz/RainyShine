@@ -78,11 +78,11 @@
                                 <rect key="frame" x="0.0" y="300" width="375" height="367"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="84" id="ARF-fC-OMl">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="84" id="ARF-fC-OMl">
                                         <rect key="frame" x="0.0" y="28" width="375" height="84"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ARF-fC-OMl" id="qxp-tG-sM3">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="83"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ac5-zZ-Ax2">
@@ -134,6 +134,7 @@
                                                 <constraint firstAttribute="bottomMargin" secondItem="jMu-YF-PQU" secondAttribute="bottom" constant="19" id="vTg-NQ-c3l"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

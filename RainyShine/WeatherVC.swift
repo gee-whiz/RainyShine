@@ -1,6 +1,6 @@
 //
 // WeatherVC.swift
-//  RainyShine
+//  CD
 //
 //  Created by George Kapoya on 2017/01/03.
 //  Copyright © 2017 immeddia. All rights reserved.
@@ -18,6 +18,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	@IBOutlet weak var lblDate: UILabel!
 	override func viewDidLoad() {
 		super.viewDidLoad()
+
+		print(CURRENT_WEATHER_URL)
 
 	}
 
