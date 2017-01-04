@@ -19,8 +19,12 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		WeatherClient.getCurrentWeatherDataByCity(url: CURRENT_WEATHER_URL) { (Weather) in
-
+		WeatherClient.getCurrentWeatherDataByCity(url: CURRENT_WEATHER_URL) { (weather) in
+			 let temp  = String(format: "%0.1f", weather.currentTemp)
+             self.lblCity.text = "\(weather.cityName),  \(weather.countryName)"
+			 self.lblTempreture.text = "\(temp ) °"
+			 self.lblCondition.text = weather.weatherType
+			 self.lblDate.text = weather.date
 		}
 
 	}

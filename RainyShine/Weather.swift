@@ -12,6 +12,7 @@ import UIKit
 class Weather {
 
 	var _cityName: String!
+	var _countryName: String!
 	var _date: String!
 	var _weatherType: String!
 	var _currentTemp:  Double!
@@ -22,6 +23,12 @@ class Weather {
 			_cityName = ""
 		}
 		return _cityName
+	}
+	var countryName: String {
+		if _countryName == nil {
+			_countryName = ""
+		}
+		return _countryName
 	}
 	var weatherType: String {
 		if _weatherType == nil {
@@ -40,8 +47,8 @@ class Weather {
 		if _date == nil {
 			_date = ""
 		}
-         let dateFormatter = DateFormatter()
-         dateFormatter.dateStyle  = .long
+		let dateFormatter = DateFormatter()
+		dateFormatter.dateStyle  = .long
 		dateFormatter.timeStyle  = .none
 		let currentDate = dateFormatter.string(from: Date())
 		self._date = "Today, \(currentDate)"
